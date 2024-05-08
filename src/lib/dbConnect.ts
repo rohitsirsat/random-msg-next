@@ -1,5 +1,4 @@
-import { promises } from "dns";
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 type ConnectionObject = {
   isConnected?: number;

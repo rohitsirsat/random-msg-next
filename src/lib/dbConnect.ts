@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+//
 type ConnectionObject = {
   isConnected?: number;
 };
@@ -18,6 +19,8 @@ async function dbConnect() {
     connection.isConnected = db.connections[0].readyState;
 
     console.log("DB Connected Successfully");
+    console.log("DB: => ", db);
+    console.log(db.connections[0].readyState);
   } catch (error) {
     console.log("DB Connection Failed", error);
 

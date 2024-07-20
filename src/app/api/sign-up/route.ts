@@ -61,6 +61,8 @@ export async function POST(reqest: Request) {
         messages: [],
       });
 
+      console.log("newUser == :", newUser);
+
       await newUser.save();
     }
     // send verification email
